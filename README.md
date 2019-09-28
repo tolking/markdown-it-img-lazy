@@ -2,6 +2,8 @@
 
 > a markdown-it plugin to better supporting image lazy loading
 
+**The plugin will preferentially use native image [lazy-loading](https://caniuse.com/#feat=loading-lazy-attr), if the browser does not support it, it will be implemented through lozad**
+
 ---
 
 ## Installation
@@ -33,7 +35,7 @@ Use the native image [lazy-loading](https://caniuse.com/#feat=loading-lazy-attr)
 
 ```
 if useLoading = true
-![img](img.jpg) -> <p><img alt="img" loading="lazy" data-src="img.jpg" class="lazy"></p>
+![img](img.jpg) -> <p><img alt="img" data-src="img.jpg" loading="lazy" class="lazy"></p>
 
 if useLoading = false
 ![img](img.jpg) -> <p><img alt="img" data-src="img.jpg" class="lazy"></p>
