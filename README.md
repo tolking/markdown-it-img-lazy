@@ -25,24 +25,37 @@ load [Lozad.js](https://github.com/ApoorvSaxena/lozad.js) in the head tag of you
 
 load [imgLazy.js](https://github.com/tolking/markdown-it-img-lazy/blob/master/imgLazy.js) closer the `</body>` tag of your page
 
+``` md
+![img](/img.jpg)
+```
+
 ## Options
 
-### useLoading
+### useNative
 - Type: `Boolben`
 - Default: `true`
+- Required: `false`
 
 Use the native image [lazy-loading](https://caniuse.com/#feat=loading-lazy-attr) for the web
 
 ```
-if useLoading = true
+if useNative = true
 ![img](img.jpg) -> <p><img alt="img" data-src="img.jpg" loading="lazy" class="lazy"></p>
 
-if useLoading = false
+if useNative = false
 ![img](img.jpg) -> <p><img alt="img" data-src="img.jpg" class="lazy"></p>
 ```
 
 ### selector
 - Type: `string`
 - Default: `lazy`
+- Required: `false`
 
 Default class name for image
+
+### prefix
+- Type: `string` `Function`
+- Default: `''`
+- Required: `false`
+
+Config prefix for src in images
