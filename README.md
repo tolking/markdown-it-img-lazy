@@ -32,7 +32,7 @@ load [imgLazy.js](https://github.com/tolking/markdown-it-img-lazy/blob/master/im
 ## Options
 
 ### useNative
-- Type: `Boolben`
+- Type: `Boolean`
 - Default: `true`
 - Required: `false`
 
