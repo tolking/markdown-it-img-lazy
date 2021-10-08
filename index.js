@@ -14,7 +14,7 @@ module.exports = function img_lazy_plugin(md, options) {
         var src = typeof prefix === 'function' ? prefix(srcValue) : prefix + srcValue;
         token.attrPush(['data-src', src]);
         useNative && token.attrPush(['loading', 'lazy']);
-        token.attrPush(['class', selector]);
+        token.attrJoin('class', selector);
         token.attrs.splice(aIndex, 1);
         return defaultImageRenderer(tokens, idx, options, env, self);
     };
