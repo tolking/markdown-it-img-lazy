@@ -1,6 +1,6 @@
 {
   "name": "markdown-it-img-lazy",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "index.js",
   "type": "commonjs",
   "description": "a markdown-it plugin to better supporting image lazy loading",
